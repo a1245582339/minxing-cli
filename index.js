@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const program = require('commander');
 const checkExist = require('./lib/checkExist')
+const init = require('./lib/init')
 program
   .version('0.0.1')
   .option('-i, init', 'Add init')
