@@ -3,6 +3,7 @@ const program = require('commander');
 const chalk = require('chalk');
 const checkExist = require('./lib/checkExist')
 const init = require('./lib/init')
+const packet = require('./lib/packet')
 const log = console.log
 
 program
@@ -13,7 +14,6 @@ program
  
 if (program.init) {
   checkExist().then(exist => {
-    console.log('exist', exist)
     if (exist) {
       log(chalk.red('❗ 已存在敏行配置文件，创建失败！'))
     } else {
@@ -22,7 +22,11 @@ if (program.init) {
   })
 }
 if (program.packet) {
-  if (!checkExist()) {
-    console.log('不是有效目录')
-  }
+  checkExist().then(exist => {
+    if (exist) {
+      packet()
+    } else {
+      log(chalk.red('❗ 不是有效的敏行目录，打包失败！'))
+    }
+  })
 }
