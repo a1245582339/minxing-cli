@@ -31,9 +31,11 @@
 ### init / -i
 
 初始化敏行应用，在当前项目下创建敏行的config文件夹
+
 ![Image 创建成功](./img/init_success.png)
 
-若当前项目下已存在完整的敏行config文件夹，则提示错误
+若当前项目下已存在完整的敏行config文件夹，则提示错误  
+
 ![Image 已存在](./img/init_exist.png)
 
 ### packet / -p
@@ -43,16 +45,16 @@
 ![Image 创建成功](./img/packet_succ_1.png)
 
 
-若当前文件夹中已存在当前应用的插件应用包，则会提示删除此压缩包
+若当前文件夹中已存在当前应用的插件应用包，则会提示删除此压缩包                   
 
 ![Image 创建成功](./img/packet_succ_2.png)
 
 
-若当前项目不是敏行项目，会提示对应错误
+若当前项目不是敏行项目，会提示对应错误               
 
 ![Image 创建成功](./img/packet_error1.png)
 
 
-若当前项目下没有dist/www的静态目录，会提示对应错误
+若当前项目下没有dist/www的静态目录，会提示对应错误              
 
 ![Image 创建成功](./img/packet_error2.png)
