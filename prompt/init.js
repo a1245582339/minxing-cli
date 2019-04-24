@@ -8,12 +8,12 @@ module.exports = [
         default: false,
     }, {
         type: 'confirm',
-        message: '是否隐藏工具菜单',
+        message: '是否隐藏右上角菜单',
         name: 'hideOptionMenu',
         default: true,
     }, {
         type: 'confirm',
-        message: '是否隐藏工具栏',
+        message: '是否隐藏底部工具栏',
         name: 'hideToolbar',
         default: true,
     }, {
