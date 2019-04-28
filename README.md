@@ -22,7 +22,7 @@
 |---|---|---|
 | init | -i | 在当前文件夹初始化敏行应用 |
 | packet | -p | 将当前文件夹项目增加版本号并压缩为敏行插件包 |
-
+| sftp | -s | 将当前文件夹下build好的文件上传至服务器 |
 
 *其他功能敬请期待*
 
@@ -58,3 +58,17 @@
 若当前项目下没有dist/www的静态目录，会提示对应错误              
 
 ![Image 创建成功](./img/packet_error2.png)
+
+### sftp / -s
+
+![Image 创建配置文件](./img/sftp_create.png)
+
+若当前目录下没有/.vscode/sftp.json文件，可根据配置并创建
+
+![Image 上传成功](./img/sftp_succ.png)
+
+连接正常后，提示上传成功
+
+![Image 上传失败](./img/sftp_error1.png)
+
+连接失败，提示上传失败

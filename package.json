@@ -1,6 +1,6 @@
 {
   "name": "minxing-cli",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "敏行插件应用脚手架",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,7 @@
     "lodash": "^4.17.11",
     "minimist": "^1.2.0",
     "ora": "^3.4.0",
+    "scp2": "^0.5.0",
     "simple-git": "^1.110.0",
     "touch": "^3.1.0"
   },

@@ -4,12 +4,14 @@ const chalk = require('chalk');
 const checkExist = require('./lib/checkExist')
 const init = require('./lib/init')
 const packet = require('./lib/packet')
+const sftp = require('./lib/sftp')
 const log = console.log
 
 program
   .version('0.0.1')
   .option('-i, init', 'Add init')
   .option('-p, packet', 'Add packet')
+  .option('-s sftp', 'Add sftp')
   .parse(process.argv);
  
 if (program.init) {
@@ -29,4 +31,7 @@ if (program.packet) {
       log(chalk.red('❗ 不是有效的敏行目录，打包失败！'))
     }
   })
+}
+if (program.sftp) {
+  sftp()
 }
