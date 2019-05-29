@@ -9,6 +9,9 @@ function stringify (obj) {
 
 function parse (properties) {
     return properties.toString('utf-8').split(';\r\n').reduce((total, curr) => { // 字符串转为对象
+        if (curr === '') {
+            return total
+        }
         const keyVal = curr.split('=') // 用=分割key与val
         const key = keyVal[0].trim() // key去空格
         const val = keyVal[1].trim() // val去空格
